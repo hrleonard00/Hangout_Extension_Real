@@ -1,0 +1,80 @@
+{
+  "backendCommand": "node backend -c \"e4sin4v99di9sdh868pf7xda8dvg9y\" -s \"NB8N+JZxt7TNN0Ncugn7B0/wU+w7Pv+mJoy7bJqopJ4=\" -o \"413830056\"",
+  "backendFolderName": "extensions-hello-world\\services",
+  "extensionViews": [
+    {
+      "id": "1",
+      "label": "View 1",
+      "channelId": "413830056",
+      "type": "panel",
+      "features": {
+        "isChatEnabled": false
+      },
+      "linked": false,
+      "linkedUserId": "",
+      "mode": "viewer",
+      "isPopout": false,
+      "role": "Logged-In Viewer",
+      "x": 0,
+      "y": 0,
+      "orientation": "Portrait",
+      "frameSize": {
+        "width": 640,
+        "height": 480
+      }
+    }
+  ],
+  "frontendCommand": "",
+  "frontendFolderName": "Hangout\\public",
+  "manifest": {
+    "anchor": "panel",
+    "assetUrls": [],
+    "authorName": "Hannah Leonard",
+    "bitsEnabled": false,
+    "canInstall": true,
+    "configUrl": "https://localhost.rig.twitch.tv:8080/config.html",
+    "configurationLocation": "hosted",
+    "description": "The chat can be a crazy place. Bots here, spam there, it's a pillar of verbal chaos. But there's no need to worry champ, cause now you and your best buds can have your own little chat where you can actually ...  you know, chat. So sit back, relax, and just Hangout.",
+    "eulaTosUrl": "",
+    "hasChatSupport": false,
+    "iconUrl": "https://media.forgecdn.net/avatars/189/713/636851792543033161.png",
+    "iconUrls": {
+      "100x100": "https://media.forgecdn.net/avatars/189/713/636851792543033161.png"
+    },
+    "id": "e4sin4v99di9sdh868pf7xda8dvg9y",
+    "installationCount": -42,
+    "liveConfigUrl": "",
+    "name": "Hangout",
+    "panelHeight": 300,
+    "privacyPolicyUrl": "",
+    "requestIdentityLink": false,
+    "requiredBroadcasterAbilities": [],
+    "screenshotUrls": [
+      "internal/screenshots/test_data.png"
+    ],
+    "sku": "",
+    "state": "Testing",
+    "summary": "Create your own group chat to go along with a Twitch stream.",
+    "supportEmail": "hrleonard00@gmail.com",
+    "vendorCode": "",
+    "version": "0.0.1",
+    "viewerUrl": "https://localhost.rig.twitch.tv:8080/panel.html",
+    "viewerUrls": {
+      "panel": "https://localhost.rig.twitch.tv:8080/panel.html"
+    },
+    "views": {
+      "panel": {
+        "viewerUrl": "https://localhost.rig.twitch.tv:8080/panel.html",
+        "height": 300,
+        "canLinkExternalContent": false
+      },
+      "config": {
+        "viewerUrl": "https://localhost.rig.twitch.tv:8080/config.html",
+        "canLinkExternalContent": false
+      }
+    },
+    "whitelistedConfigUrls": [],
+    "whitelistedPanelUrls": []
+  },
+  "name": "Hangout"
+}
