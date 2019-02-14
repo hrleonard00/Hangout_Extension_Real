@@ -38,12 +38,7 @@ twitch.onAuthorized(function(auth) {
     tuid = auth.userId;
 
     // enable the button
-    
-	$('#Second1').hide();
-	$('#Second2').hide();
-	$('#Third').hide();
-	$('#Four').hide();
-
+    $('#cycle').removeAttr('disabled');
 
     setAuth(token);
     $.ajax(requests.get);
@@ -67,63 +62,15 @@ function logSuccess(hex, status) {
 $(function() {
 
     // when we click the cycle button
-    $('#join').click(function() {
+    $('#cycle').click(function() {
         if(!token) { return twitch.rig.log('Not authorized'); }
-        twitch.rig.log('Join was clicked');
-		
-		$("#Second1").show();
-		$("#First").hide();
-        
-		//$.ajax(requests.set);
+        twitch.rig.log('Requesting a color cycle');
+        $.ajax(requests.set);
     });
-	
-	$('#host').click(function() {
-        if(!token) { return twitch.rig.log('Not authorized'); }
-        twitch.rig.log('Host was clicked');
-		
-		$("#Second2").show();
-		$("#First").hide();
-		
-        //$.ajax(requests.set);
-    });
-	
-	$("#toChat").click(function(){
-		if(!token) { return twitch.rig.log('Not authorized'); }
-        twitch.rig.log('toChat was clicked');
-		
-		$("#Second1").hide();
-		$("#Second2").hide();
-		$("#Third").show();
- 
-	});
-	
-	$("#totoChat").click(function(){
-		if(!token) { return twitch.rig.log('Not authorized'); }
-        twitch.rig.log('toChat was clicked');
-		
-		$("#Second1").hide();
-		$("#Second2").hide();
-		$("#Third").show();
- 
-	});
-	
-	$("#toGame").click(function(){
-		if(!token) { return twitch.rig.log('Not authorized'); }
-        twitch.rig.log('toChat was clicked');
-		
-		$("#Third").hide();
-		$("#Four").show();
- 
-	});
-
 
     // listen for incoming broadcast message from our EBS
     twitch.listen('broadcast', function (target, contentType, color) {
         twitch.rig.log('Received broadcast color');
         updateBlock(color);
     });
-	
-	
- 
-  
 });
